@@ -11,7 +11,7 @@
                         <input class="form-control" type="text" name="login" [(ngModel)]="login" id="login" formControlName="login"
                             [ngClass]="{ 'is-invalid':(!f.login.pristine && f.login.errors) }">
                         <div *ngIf="f.login.errors" class="invalid-feedback">
-                            <div *ngIf="f.login.status === 'INVALID'">É necessário informar o usuário!
+                            <div *ngIf="f.login.status === 'INVALID'">É necessário informar o usuário!</div>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
                             <input class="form-control" type="password" name="password" [(ngModel)]="password" id="password" formControlName="password"
                                 [ngClass]="{ 'is-invalid':(!f.password.pristine && f.password.errors) }">
                             <div *ngIf="f.login.errors" class="invalid-feedback">
-                                <div *ngIf="f.login.status === 'INVALID'">É necessário informar o usuário!
+                                <div *ngIf="f.login.status === 'INVALID'">É necessário informar a senha! </div>
                             </div>
                     </div>
                 </div>
