@@ -19,7 +19,9 @@ const routes: Routes = [
   {path: "homeCs", component: HomeCsComponent},
   {path: "homeFifa", component: HomeFifaComponent},
   {path: "homeLol", component: HomeLoLComponent}]},
+  {path: '**', redirectTo: '' },
 
+  // {path: "", redirectTo: "/login"}
   {path: "", redirectTo: "/login", pathMatch: "full"}
 ];
 
