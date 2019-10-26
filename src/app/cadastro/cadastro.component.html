@@ -7,7 +7,7 @@
             <div class="form-control">
                 <div class="row">
                     <div class="col-sm">
-                        <label for="usuario"> Nome de usuário</label>
+                        <label for="usuario"> Nome de usuário:</label>
                         <input class="form-control" type="text" name="usuario" [(ngModel)]="usuario" id="usuario" formControlName="usuario"
                             [ngClass]="{ 'is-invalid':(!f.usuario.pristine && f.usuario.errors) }">
                         <div *ngIf="f.usuario.errors" class="invalid-feedback">
@@ -18,7 +18,7 @@
 
                 <div class="row">
                     <div class="col-sm">
-                        <label for="login"> Informe seu login </label>
+                        <label for="login"> Informe seu login: </label>
                         <input class="form-control" type="text" name="login" [(ngModel)]="login" id="login" formControlName="login"
                             [ngClass]="{ 'is-invalid':(!f.login.pristine && f.login.errors) }">
                         <div *ngIf="f.login.errors" class="invalid-feedback">
@@ -29,7 +29,7 @@
 
                 <div class="row">
                     <div class="col-sm">
-                        <label for="email"> Informe seu email </label>
+                        <label for="email"> Informe seu email: </label>
                         <input class="form-control" type="text" name="email" [(ngModel)]="email" id="email" formControlName="email"
                             [ngClass]="{ 'is-invalid':(!f.email.pristine && f.email.errors) }">
                         <div *ngIf="f.email.errors" class="invalid-feedback">
@@ -40,7 +40,7 @@
 
                 <div class="row" style="margin-top: 15px;">
                     <div class="col-sm">
-                        <label for="password"> Senha </label>
+                        <label for="password"> Senha: </label>
                         <input class="form-control" type="password" name="password" [(ngModel)]="password" id="password" formControlName="password"
                             [ngClass]="{ 'is-invalid':(!f.password.pristine && f.password.errors) }">
                         <div *ngIf="f.password.errors" class="invalid-feedback">
@@ -51,7 +51,7 @@
 
              <div class="row" style="margin-top: 15px;">
                 <div class="col-sm">
-                    <label for="telefone"> Telefone </label>
+                    <label for="telefone"> Telefone: </label>
                     <input class="form-control" type="telefone" name="telefone" [(ngModel)]="telefone" id="telefone" formControlName="telefone"
                         [ngClass]="{ 'is-invalid':(!f.telefone.pristine && f.telefone.errors) }">
                     <div *ngIf="f.telefone.errors" class="invalid-feedback">
@@ -62,7 +62,7 @@
 
         <div class="row" style="margin-top: 15px;">
             <div class="col-sm">
-                <label for="dtNascimento"> Data de Nascimento </label>
+                <label for="dtNascimento"> Data de Nascimento: </label>
                 <input class="form-control" type="dtNascimento" name="dtNascimento" [(ngModel)]="dtNascimento" id="dtNascimento" formControlName="dtNascimento"
                     [ngClass]="{ 'is-invalid':(!f.dtNascimento.pristine && f.dtNascimento.errors) }">
                 <div *ngIf="f.dtNascimento.errors" class="invalid-feedback">
@@ -70,10 +70,11 @@
                 </div>
         </div>
     </div>
+    <br />
 
         <button type="submit" class="btn btn-primary">Salvar</button>
         &nbsp; &nbsp;
-        <button type="submit" class="btn btn-primary">Cancelar</button>
+        <a routerLink="/login"> Cancelar! </a>
 
             </div>
 
