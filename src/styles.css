@@ -4,3 +4,11 @@
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+A {
+   text-decoration: none;
+   color: whitesmoke;
+   font-family: Verdana, Geneva, Tahoma, sans-serif } 
+
+.conteudo {
+   padding-top: 10px;
+}

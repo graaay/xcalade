@@ -13,6 +13,7 @@ import { EscolhaJogoComponent } from './escolha-jogo/escolha-jogo.component';
 import { HomeLoLComponent } from './home-lo-l/home-lo-l.component';
 import { HomeCsComponent } from './home-cs/home-cs.component';
 import { HomeFifaComponent } from './home-fifa/home-fifa.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HomeFifaComponent } from './home-fifa/home-fifa.component';
     EscolhaJogoComponent,
     HomeLoLComponent,
     HomeCsComponent,
-    HomeFifaComponent
+    HomeFifaComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
