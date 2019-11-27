@@ -14,11 +14,12 @@ const routes: Routes = [
   {path: "login", component: LoginComponent},
   {path: "cadastro", component: CadastroComponent},
   {path: "home", component: HomeComponent, children: [
-  {path: "perfil", component: PerfilComponent},
-  {path: "escolhaJogo", component: EscolhaJogoComponent},
-  {path: "homeCs", component: HomeCsComponent},
-  {path: "homeFifa", component: HomeFifaComponent},
-  {path: "homeLol", component: HomeLoLComponent}]},
+    {path: "perfil", component: PerfilComponent},
+    {path: "escolhaJogo", component: EscolhaJogoComponent},
+    {path: "homeCs", component: HomeCsComponent},
+    {path: "homeFifa", component: HomeFifaComponent},
+    {path: "homeLol", component: HomeLoLComponent}
+  ]},
   {path: '**', redirectTo: '' },
 
   // {path: "", redirectTo: "/login"}
