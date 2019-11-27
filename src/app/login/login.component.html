@@ -1,8 +1,8 @@
-<div style="background-color: gray;">
-    <div class="container" style="width: 50%; background-color:darkmagenta; margin: auto;">
+<div style="background-color: #1b2838; height: 100%;">
+    <div class="container" style="width: 50%; background-color:rgba(0,0,0,0.2); margin: auto; padding-bottom: 20px; margin-top: 15%;">
         <h1 style="text-align: center; color: white;"> Login </h1>
 
-        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <form [formGroup]="loginForm" style="background-color: background-color:rgba(0,0,0,0.2);" (ngSubmit)="onSubmit()">
 
             <div class="form-control">
                 <div class="row">
@@ -10,7 +10,7 @@
                         <label for="login"> Nome de usuário ou E-mail </label>
                         <input class="form-control" type="text" name="login" [(ngModel)]="login" id="login" formControlName="login"
                             [ngClass]="{ 'is-invalid':(!f.login.pristine && f.login.errors) }">
-                        <div *ngIf="f.login.errors" class="invalid-feedback">
+                        <div *ngIf="f.login.errors && try" class="invalid-feedback">
                             <div *ngIf="f.login.status === 'INVALID'">É necessário informar o usuário!</div>
                         </div>
                     </div>
@@ -20,7 +20,7 @@
                             <label for="password"> Senha </label>
                             <input class="form-control" type="password" name="password" [(ngModel)]="password" id="password" formControlName="password"
                                 [ngClass]="{ 'is-invalid':(!f.password.pristine && f.password.errors) }">
-                            <div *ngIf="f.password.errors" class="invalid-feedback">
+                            <div *ngIf="f.password.errors && try" class="invalid-feedback">
                                 <div *ngIf="f.password.status === 'INVALID'">É necessário informar a senha! </div>
                             </div>
                     </div>

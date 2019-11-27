@@ -1,5 +1,6 @@
 import { FormBuilder, Validators, FormControl, FormGroup } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,8 +12,9 @@ export class LoginComponent implements OnInit {
   public loginForm: FormGroup;
   login: String;
   password: String;
+  public try = false;
   
-  constructor(private formValidator: FormBuilder) {
+  constructor(private formValidator: FormBuilder, private router: Router) {
   }
 
   ngOnInit() {
@@ -33,6 +35,13 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     console.log(this.f);
+    console.log(this.try);
+    this.try = true;
+    if (this.loginForm.status === 'VALID') {
+      this.router.navigate(['/home']);
+    } else {
+      // alert('É necessário informar todos os campos!');
+    }
   }
 
 }
