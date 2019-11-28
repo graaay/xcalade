@@ -17,7 +17,7 @@ const routes: Routes = [
     {path: "perfil", component: PerfilComponent},
     {path: "escolhaJogo", component: EscolhaJogoComponent},
     {path: "homeCs", component: HomeCsComponent},
-    {path: "homeFifa", component: HomeFifaComponent},
+    {path: "homeDota", component: HomeFifaComponent},
     {path: "homeLol", component: HomeLoLComponent}
   ]},
   {path: '**', redirectTo: '' },

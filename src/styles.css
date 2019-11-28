@@ -12,3 +12,11 @@ A {
 .conteudo {
    padding-top: 10px;
 }
+
+.colorBackground {
+   background-color:rgba(0,0,0,0.2);
+}
+
+.form-control {
+   background-color:rgba(0,0,0,0.2);
+}
