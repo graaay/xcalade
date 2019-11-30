@@ -1,1 +1,64 @@
-<p>home-lo-l works!</p>
+<div class="lolBackground">
+    <img src="../../assets/lolScream.jpg" class="lolBackground"/>
+    <div style="position: absolute;" class="colorBackground">
+        <aside style="float: left">
+            <table class="table table-dark table-striped" style="margin-left: 20px; width: 300px; margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <th colspan="3" style="text-align: center;">
+                            <b> Top punter's LoL</b>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <b>Position</b>
+                        </th>
+                        <th>
+                            <b>Name</b>
+                        </th>
+                        <th>
+                            <b>Points</b>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users">
+                        <td> 
+                            <b>{{user.pos}} </b>    
+                        </td>
+                        <td> 
+                            <b>{{user.name}} </b>    
+                        </td>
+                        <td> 
+                            <b>{{user.points}} </b>    
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+        <article style="float: none; margin: auto; display: flex;">
+            <form>
+                <table class="table table-dark table-striped" style="margin-left: 20px; margin-top: 20px;">
+                    <thead>
+                        <tr>
+                            <th colspan="3" style="text-align: center;">
+                                <b> Games of this round</b>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let round of rounds">
+                            <td> 
+                                <b>{{roudn.teamA}} </b>    
+                            </td>
+                            <td> 
+                                <b>{{round.teamB}} </b>    
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </article>
+        
+    </div>
+</div>

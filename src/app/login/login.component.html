@@ -1,14 +1,14 @@
-<div style="background-color: #1b2838; height: 100%;">
-    <div class="conteudo colorBackground" style="width: 50%; margin: auto; padding-bottom: 20px;">
+<div style="background-color: #1b2838; height: 100%; padding-top: 20px;">
+    <div class="conteudo" style="width: 50%; margin: auto; padding-bottom: 20px; background-color:rgba(0,0,0,0.2);">
         <h1 style="text-align: center; color: white;"> Login </h1>
 
-        <form [formGroup]="loginForm" style="background-color: rgba(0,0,0,0.2);" (ngSubmit)="onSubmit()">
+        <form [formGroup]="loginForm"  (ngSubmit)="onSubmit()">
 
-            <div class="form-control">
+            <div class="form-controla">
                 <div class="row">
                     <div class="col-sm">
                         <label for="login"> Nome de usuário ou E-mail </label>
-                        <input class="form-control" type="text" name="login" [(ngModel)]="login" id="login" formControlName="login"
+                        <input class="form-controla" type="text" name="login" [(ngModel)]="login" id="login" formControlName="login"
                             [ngClass]="{ 'is-invalid':(!f.login.pristine && f.login.errors) }">
                         <div *ngIf="f.login.errors && try" class="invalid-feedback">
                             <div *ngIf="f.login.status === 'INVALID'">É necessário informar o usuário!</div>
@@ -18,7 +18,7 @@
                 <div class="row" style="margin-top: 15px;">
                         <div class="col-sm">
                             <label for="password"> Senha </label>
-                            <input class="form-control" type="password" name="password" [(ngModel)]="password" id="password" formControlName="password"
+                            <input class="form-controla" type="password" name="password" [(ngModel)]="password" id="password" formControlName="password"
                                 [ngClass]="{ 'is-invalid':(!f.password.pristine && f.password.errors) }">
                             <div *ngIf="f.password.errors && try" class="invalid-feedback">
                                 <div *ngIf="f.password.status === 'INVALID'">É necessário informar a senha! </div>

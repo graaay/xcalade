@@ -4,11 +4,11 @@
         
         <form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
 
-            <div class="form-control">
+            <div class="form-controla">
                 <div class="row">
                     <div class="col-sm">
                         <label for="usuario"> Nome de usuário:</label>
-                        <input class="form-control" type="text" name="usuario" [(ngModel)]="usuario" id="usuario" formControlName="usuario"
+                        <input class="form-controla" type="text" name="usuario" [(ngModel)]="usuario" id="usuario" formControlName="usuario"
                             [ngClass]="{ 'is-invalid':(!f.usuario.pristine && f.usuario.errors) }">
                         <div *ngIf="f.usuario.errors" class="invalid-feedback">
                             <div *ngIf="f.usuario.status === 'INVALID'">É necessário informar o usuário!</div>
@@ -19,7 +19,7 @@
                 <div class="row">
                     <div class="col-sm">
                         <label for="login"> Informe seu login: </label>
-                        <input class="form-control" type="text" name="login" [(ngModel)]="login" id="login" formControlName="login"
+                        <input class="form-controla" type="text" name="login" [(ngModel)]="login" id="login" formControlName="login"
                             [ngClass]="{ 'is-invalid':(!f.login.pristine && f.login.errors) }">
                         <div *ngIf="f.login.errors" class="invalid-feedback">
                             <div *ngIf="f.login.status === 'INVALID'">É necessário informar o login!</div>
@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col-sm">
                         <label for="email"> Informe seu email: </label>
-                        <input class="form-control" type="text" name="email" [(ngModel)]="email" id="email" formControlName="email"
+                        <input class="form-controla" type="text" name="email" [(ngModel)]="email" id="email" formControlName="email"
                             [ngClass]="{ 'is-invalid':(!f.email.pristine && f.email.errors) }">
                         <div *ngIf="f.email.errors" class="invalid-feedback">
                             <div *ngIf="f.email.status === 'INVALID'">É necessário informar o email!</div>
@@ -41,7 +41,7 @@
                 <div class="row" style="margin-top: 15px;">
                     <div class="col-sm">
                         <label for="password"> Senha: </label>
-                        <input class="form-control" type="password" name="password" [(ngModel)]="password" id="password" formControlName="password"
+                        <input class="form-controla" type="password" name="password" [(ngModel)]="password" id="password" formControlName="password"
                             [ngClass]="{ 'is-invalid':(!f.password.pristine && f.password.errors) }">
                         <div *ngIf="f.password.errors" class="invalid-feedback">
                             <div *ngIf="f.password.status === 'INVALID'">É necessário informar a senha! </div>
@@ -52,7 +52,7 @@
              <div class="row" style="margin-top: 15px;">
                 <div class="col-sm">
                     <label for="telefone"> Telefone: </label>
-                    <input class="form-control" type="telefone" name="telefone" [(ngModel)]="telefone" id="telefone" formControlName="telefone"
+                    <input class="form-controla" type="telefone" name="telefone" [(ngModel)]="telefone" id="telefone" formControlName="telefone"
                         [ngClass]="{ 'is-invalid':(!f.telefone.pristine && f.telefone.errors) }">
                     <div *ngIf="f.telefone.errors" class="invalid-feedback">
                         <div *ngIf="f.telefone.status === 'INVALID'">É necessário informar o seu telefone! </div>
@@ -63,7 +63,7 @@
         <div class="row" style="margin-top: 15px;">
             <div class="col-sm">
                 <label for="dtNascimento"> Data de Nascimento: </label>
-                <input class="form-control" type="dtNascimento" name="dtNascimento" [(ngModel)]="dtNascimento" id="dtNascimento" formControlName="dtNascimento"
+                <input class="form-controla" type="dtNascimento" name="dtNascimento" [(ngModel)]="dtNascimento" id="dtNascimento" formControlName="dtNascimento"
                     [ngClass]="{ 'is-invalid':(!f.dtNascimento.pristine && f.dtNascimento.errors) }">
                 <div *ngIf="f.dtNascimento.errors" class="invalid-feedback">
                     <div *ngIf="f.dtNascimento.status === 'INVALID'">É necessário informar a sua data de nascimento! </div>

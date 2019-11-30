@@ -11,12 +11,55 @@ A {
 
 .conteudo {
    padding-top: 10px;
+   background-color:rgba(0,0,0,0.2);
 }
 
 .colorBackground {
    background-color:rgba(0,0,0,0.2);
 }
 
-.form-control {
+
+.form-controla {
    background-color:rgba(0,0,0,0.2);
+   display: block;
+   width: 100%;
+   padding: .375rem .75rem;
+   font-size: 1rem;
+   line-height: 1.5;
+   color: #a7adb3;
+   background-clip: padding-box;
+   border: 1px solid #011930;
+   border-top: 0px;
+   border-bottom: 0px;
+   border-radius: .25rem;
+   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+   transition-property: border-color, box-shadow;
+   transition-duration: 0.15s, 0.15s;
+   transition-timing-function: ease-in-out, ease-in-out;
+   transition-delay: 0s, 0s;
+}
+
+input {
+   background-color: rgba(0,0,0,0.2);
+   border-top: solid 1px rgb(29, 33, 58);
+   border-bottom: solid 1px rgb(29, 33, 58);
+}
+
+.lolBackground {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   /* content: "../../assets/lolScream.jpg"; */
+   background-image: "../../assets/lolScream.jpg";
+   color: whitesmoke; 
+}
+
+span {
+   color: whitesmoke;
+}
+
+.colorBackground {
+   background-color: rgba(16, 9, 58, 0.329);
+   height: 100%;
+   width: 100%;
 }
