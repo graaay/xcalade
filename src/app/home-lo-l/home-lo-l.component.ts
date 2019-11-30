@@ -25,6 +25,8 @@ export class HomeLoLComponent implements OnInit {
     {teamA: "KDS", teamB: "RED"},
     {teamA: "RDP", teamB: "CNB"},
   ]
+
+  
   constructor() { }
 
   ngOnInit() {

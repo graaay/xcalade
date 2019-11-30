@@ -63,3 +63,10 @@ span {
    height: 100%;
    width: 100%;
 }
+
+.article {
+   float: none;
+   background-color: rgba(16, 9, 58, 0.329);
+   margin-top: 20px;
+   width: 900px;
+}

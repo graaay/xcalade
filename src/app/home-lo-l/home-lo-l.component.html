@@ -36,28 +36,35 @@
                 </tbody>
             </table>
         </aside>
-        <article style="float: none; margin: auto; display: flex;">
-            <form>
-                <table class="table table-dark table-striped" style="margin-left: 20px; margin-top: 20px;">
-                    <thead>
-                        <tr>
-                            <th colspan="3" style="text-align: center;">
-                                <b> Games of this round</b>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr *ngFor="let round of rounds">
-                            <td> 
-                                <b>{{roudn.teamA}} </b>    
-                            </td>
-                            <td> 
-                                <b>{{round.teamB}} </b>    
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </form>
+        <article class="article" style=" display: flex; ">
+            <div style="width: 100%;">
+                <form style="width: 100%;">
+                    <table class="table table-dark table-striped" style="margin: auto; margin-top: 20px; width: 90%;">
+                        <thead>
+                            <tr>
+                                <th colspan="3" style="text-align: center;">
+                                    <b> Games of this round</b>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let round of rounds">
+                                <td style="text-align: center;" > 
+                                    <b>{{round.teamA}} </b>    
+                                </td>
+                                <td style="text-align: center;">
+                                    <input type="radio" value="round.teamA" name="choice"/>
+                                    &nbsp;| &nbsp; 
+                                    <input type="radio" value="round.teamB" name="choice"/>
+                                </td>
+                                <td style="text-align: center;" > 
+                                    <b>{{round.teamB}} </b>    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
         </article>
         
     </div>
